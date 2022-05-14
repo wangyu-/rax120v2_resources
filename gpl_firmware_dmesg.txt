@@ -1,0 +1,780 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.4.60 (yancey@yancey-VirtualBox) (gcc version 5.2.0 (OpenWrt GCC 5.2.0 unknown) ) #1 SMP PREEMPT Sat May 14 09:02:42 EDT 2022
+[    0.000000] Boot CPU: AArch64 Processor [410fd034]
+[    0.000000] Ignoring memory range 0x40000000 - 0x41000000
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] Reserved memory: OVERLAP DETECTED!
+[    0.000000] wifi_dump@51000000 (0x0000000051000000--0x0000000051600000) overlaps with wigig_dump@51200000 (0x0000000051200000--0x0000000051600000)
+[    0.000000] On node 0 totalpages: 230112
+[    0.000000]   DMA zone: 3596 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 230112 pages, LIFO batch:31
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] PERCPU: Embedded 14 pages/cpu @ffffffc03ef50000 s19584 r8192 d29568 u57344
+[    0.000000] pcpu-alloc: s19584 r8192 d29568 u57344 alloc=14*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: enabling workaround for ARM erratum 845719
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 226516
+[    0.000000] Kernel command line: console=ttyMSM0,115200n8 swiotlb=1
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.000000] software IO TLB [mem 0x7fe07000-0x7fe47000] (0MB) mapped at [ffffffc03ee07000-ffffffc03ee46fff]
+[    0.000000] Memory: 890444K/920448K available (6731K kernel code, 752K rwdata, 2784K rodata, 244K init, 429K bss, 30004K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vmalloc : 0xffffff8000000000 - 0xffffffbdbfff0000   (   246 GB)
+[    0.000000]     vmemmap : 0xffffffbdc0000000 - 0xffffffbfc0000000   (     8 GB maximum)
+[    0.000000]               0xffffffbdc0040000 - 0xffffffbdc1000000   (    15 MB actual)
+[    0.000000]     fixed   : 0xffffffbffa7fd000 - 0xffffffbffac00000   (  4108 KB)
+[    0.000000]     PCI I/O : 0xffffffbffae00000 - 0xffffffbffbe00000   (    16 MB)
+[    0.000000]     modules : 0xffffffbffc000000 - 0xffffffc000000000   (    64 MB)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc03f000000   (  1008 MB)
+[    0.000000]       .init : 0xffffffc0009cd000 - 0xffffffc000a0a000   (   244 KB)
+[    0.000000]       .text : 0xffffffc000080000 - 0xffffffc0009ccc14   (  9524 KB)
+[    0.000000]       .data : 0xffffffc000a1a000 - 0xffffffc000ad6200   (   753 KB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+[    0.000000] Architected cp15 timer(s) running at 19.20MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000005] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000447] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+[    0.000459] pid_max: default: 32768 minimum: 301
+[    0.000557] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.000568] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.001118] Initializing cgroup subsys io
+[    0.001135] Initializing cgroup subsys memory
+[    0.001163] Initializing cgroup subsys devices
+[    0.001175] Initializing cgroup subsys freezer
+[    0.001186] Initializing cgroup subsys net_cls
+[    0.001196] Initializing cgroup subsys pids
+[    0.001438] EFI services will not be available.
+[    0.001462] ASID allocator initialised with 65536 entries
+[    0.052080] MSM Memory Dump base table set up
+[    0.052103] MSM Memory Dump apps data table set up
+[    0.090065] Detected VIPT I-cache on CPU1
+[    0.090108] CPU1: Booted secondary processor [410fd034]
+[    0.120050] Detected VIPT I-cache on CPU2
+[    0.120077] CPU2: Booted secondary processor [410fd034]
+[    0.150079] Detected VIPT I-cache on CPU3
+[    0.150104] CPU3: Booted secondary processor [410fd034]
+[    0.150156] Brought up 4 CPUs
+[    0.150183] SMP: Total of 4 processors activated.
+[    0.150193] CPU: All CPU(s) started at EL1
+[    0.150216] alternatives: patching kernel code
+[    0.167868] DMI not present or invalid.
+[    0.168111] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.168136] futex hash table entries: 1024 (order: 5, 131072 bytes)
+[    0.168362] pinctrl core: initialized pinctrl subsystem
+[    0.169298] NET: Registered protocol family 16
+[    0.169424] ramoops: using module parameters
+[    0.169557] pstore: Registered ramoops as persistent store backend
+[    0.169566] ramoops: attached 0x20000@0x51600000, ecc: 0/0
+[    0.200034] cpuidle: using governor ladder
+[    0.230050] cpuidle: using governor menu
+[    0.230173] vdso: 2 pages (1 code @ ffffffc000a21000, 1 data @ ffffffc000a20000)
+[    0.230287] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.230384] CPU: unavail, SoC Version: 2.0
+[    0.230419] <CORE> glink_init: IPC Logging Disabled
+[    0.230816] IPC logging disabled
+[    0.230822] IPC logging disabled
+[    0.230827] IPC logging disabled
+[    0.230832] IPC logging disabled
+[    0.230836] IPC logging disabled
+[    0.232852] gpiochip_add: registered GPIOs 0 to 69 on device: 1000000.pinctrl
+[    0.232865] GPIO chip 1000000.pinctrl: created GPIO range 0->69 ==> 1000000.pinctrl PIN 0->69
+[    0.233661] Soc version is not 1, changing clock offsets
+[    0.245364] irq: no irq domain found for /soc/smp2p-wcss/slave-kernel !
+[    0.247841] irq: no irq domain found for /soc/smp2p-wcss/slave-kernel !
+[    0.250117] msm_rpm_dev_probe: APSS-RPM communication over GLINK
+[    0.251195] sps:sps is ready.
+[    0.262659] qcom,cpr4-apss-regulator b018000.cpr4-ctrl: CPR valid fuse count: 4
+[    0.262955] qcom,cpr3-npu-regulator a4000.npu-cpr: NPU CPR valid fuse count: 2
+[    0.301255] of_get_named_gpiod_flags: can't parse 'gpio' property of node '/fixed-regulator@0[0]'
+[    0.302062] pps_core: LinuxPPS API ver. 1 registered
+[    0.302070] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.302095] PTP clock support registered
+[    0.302264] dmi: Firmware registration failed.
+[    0.303733] Advanced Linux Sound Architecture Driver Initialized.
+[    0.304356] clocksource: Switched to clocksource arch_sys_counter
+[    0.304689] FS-Cache: Loaded
+[    0.307575] NET: Registered protocol family 2
+[    0.307680] create ipmac proc
+[    0.308215] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.308324] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+[    0.308509] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.308564] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.308601] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.308793] NET: Registered protocol family 1
+[    0.309002] RPC: Registered named UNIX socket transport module.
+[    0.309009] RPC: Registered udp transport module.
+[    0.309015] RPC: Registered tcp transport module.
+[    0.309021] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.309038] PCI: CLS 0 bytes, default 128
+[    0.319126] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.320741] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[    0.321475] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.322038] romfs: ROMFS MTD (C) 2007 Red Hat, Inc.
+[    0.322167] fuse init (API version 7.23)
+[    0.322527] SGI XFS with ACLs, security attributes, realtime, no debug enabled
+[    0.326922] Key type asymmetric registered
+[    0.326941] Asymmetric key parser 'x509' registered
+[    0.326976] io scheduler noop registered
+[    0.326990] io scheduler deadline registered (default)
+[    0.328947] Turn Off All LED
+[    0.329480] qcom-pcie 20000000.pci: GPIO lookup for consumer perst
+[    0.329490] qcom-pcie 20000000.pci: using device tree for GPIO lookup
+[    0.329503] of_get_named_gpiod_flags: can't parse 'perst-gpios' property of node '/soc/pci@20000000[0]'
+[    0.329520] of_get_named_gpiod_flags: parsed 'perst-gpio' property of node '/soc/pci@20000000[0]' - status (0)
+[    0.329662] 20000000.pci supply vdda not found, using dummy regulator
+[    0.329719] 20000000.pci supply vdda_phy not found, using dummy regulator
+[    0.329754] 20000000.pci supply vdda_refclk not found, using dummy regulator
+[    0.330348] PCI host bridge /soc/pci@20000000 ranges:
+[    0.330375]    IO 0x20200000..0x202fffff -> 0x20200000
+[    0.330389]   MEM 0x20300000..0x20ffffff -> 0x20300000
+[    1.365933] qcom-pcie 20000000.pci: phy link never came up
+[    1.367476] qcom-pcie 20000000.pci: hostinit failed
+[    1.367486] qcom-pcie 20000000.pci: cannot initialize host
+[    1.367637] qcom-pcie: probe of 20000000.pci failed with error -110
+[    1.367696] qcom-pcie 10000000.pci: GPIO lookup for consumer perst
+[    1.367705] qcom-pcie 10000000.pci: using device tree for GPIO lookup
+[    1.367717] of_get_named_gpiod_flags: can't parse 'perst-gpios' property of node '/soc/pci@10000000[0]'
+[    1.367732] of_get_named_gpiod_flags: parsed 'perst-gpio' property of node '/soc/pci@10000000[0]' - status (0)
+[    1.367815] 10000000.pci supply vdda not found, using dummy regulator
+[    1.367857] 10000000.pci supply vdda_phy not found, using dummy regulator
+[    1.367891] 10000000.pci supply vdda_refclk not found, using dummy regulator
+[    1.368392] PCI host bridge /soc/pci@10000000 ranges:
+[    1.368414]    IO 0x10200000..0x102fffff -> 0x10200000
+[    1.368427]   MEM 0x10300000..0x10ffffff -> 0x10300000
+[    2.403453] qcom-pcie 10000000.pci: phy link never came up
+[    2.404996] qcom-pcie 10000000.pci: hostinit failed
+[    2.405006] qcom-pcie 10000000.pci: cannot initialize host
+[    2.405119] qcom-pcie: probe of 10000000.pci failed with error -110
+[    2.405514] MDSS QPIC HW Base phy_Address=0x7980000 virt=ffffff80004c0000
+[    2.405915] mdss_qpic_panel_probe: Panel Name = qpic lcd panel
+[    2.407142] mdss_fb_register: FrameBuffer[0] 800x480 registered successfully!
+[    2.412225] NET: Registered protocol family 27
+[    2.412238] IPC_RTR: ipc_router_create_log_ctx: IPC Logging disabled
+[    2.412252] qmi_log_init: IPC Logging disabled
+[    2.412257] qmi_log_init: IPC Logging disabled
+[    2.412346] msm_rpm_log_probe: OK
+[    2.413001] msm-dcc b3000.dcc: DCC XPU is not specified
+[    2.413185] msm-dcc b3000.dcc: DCC SRAM dump setup failed
+[    2.413208] msm-dcc b3000.dcc: jiffies_64: 0xffff8bc1, cntvct_64: 0x2023adef
+[    2.413220] msm-dcc b3000.dcc: gcnt_hi: 0x00000000(0xffffff8000484004)
+[    2.413230] msm-dcc b3000.dcc: gcnt_lo: 0x2023afa1(0xffffff8000484000)
+[    2.413851] TZ Log : Will warn on Access Violation, as paniconaccessviolation is not set
+[    2.414685] msm_serial 78b3000.serial: msm_serial: detected port #0
+[    2.414722] msm_serial 78b3000.serial: uartclk = 3686400
+[    2.414763] 78b3000.serial: ttyMSM0 at MMIO 0x78b3000 (irq = 77, base_baud = 230400) is a MSM
+[    2.414784] msm_serial: console setup on port #0
+[    3.327934] console [ttyMSM0] enabled
+[    3.332846] msm_serial 78b1000.serial: msm_serial: detected port #1
+[    3.336146] msm_serial 78b1000.serial: uartclk = 19200000
+[    3.342210] 78b1000.serial: ttyMSM1 at MMIO 0x78b1000 (irq = 78, base_baud = 1200000) is a MSM
+[    3.348105] msm_serial: driver initialized
+[    3.356596] msm_serial_hsl_init: driver initialized
+[    3.369205] brd: module loaded
+[    3.373413] loop: module loaded
+[    3.374065] spi_qup 78b5000.spi: IN:block:16, fifo:64, OUT:block:16, fifo:64
+[    4.374371] m25p80 spi32766.0: SPI transfer failed: -110
+[    4.374402] spi_master spi32766: failed to transfer one message from queue
+[    4.378746] m25p80 spi32766.0: error -110 reading 9f
+[    4.385449] m25p80: probe of spi32766.0 failed with error -110
+[    4.391666] nand: device found, Manufacturer ID: 0xef, Chip ID: 0xac
+[    4.396204] nand: Winbond W29N04GZ
+[    4.402696] nand: 512 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 64
+[    4.406023] 33 ofpart partitions found on MTD device qcom_nand.0
+[    4.413464] Creating 33 MTD partitions on "qcom_nand.0":
+[    4.419641] 0x000000000000-0x000000100000 : "0:SBL1"
+[    4.426419] 0x000000100000-0x000000200000 : "0:MIBIB"
+[    4.431242] 0x000000200000-0x000000280000 : "0:BOOTCONFIG"
+[    4.435849] 0x000000280000-0x000000300000 : "0:BOOTCONFIG1"
+[    4.441197] 0x000000300000-0x000000600000 : "0:QSEE"
+[    4.448557] 0x000000600000-0x000000900000 : "0:QSEE_1"
+[    4.453779] 0x000000900000-0x000000980000 : "0:DEVCFG"
+[    4.456828] 0x000000980000-0x000000a00000 : "0:DEVCFG_1"
+[    4.461933] 0x000000a00000-0x000000a80000 : "0:APDP"
+[    4.467421] 0x000000a80000-0x000000b00000 : "0:APDP_1"
+[    4.472360] 0x000000b00000-0x000000b80000 : "0:RPM"
+[    4.477331] 0x000000b80000-0x000000c00000 : "0:RPM_1"
+[    4.482073] 0x000000c00000-0x000000c80000 : "0:CDT"
+[    4.487312] 0x000000c80000-0x000000d00000 : "0:CDT_1"
+[    4.491991] 0x000000d00000-0x000000d80000 : "0:APPSBLENV"
+[    4.497200] 0x000000d80000-0x000000e80000 : "0:APPSBL"
+[    4.502932] 0x000000e80000-0x000000f80000 : "0:APPSBL_1"
+[    4.507989] 0x000000f80000-0x000001000000 : "0:ART"
+[    4.513068] 0x000001000000-0x000001080000 : "0:ART.bak"
+[    4.517677] 0x000001080000-0x000001180000 : "config"
+[    4.523224] 0x000001180000-0x000001280000 : "boarddata1"
+[    4.528485] 0x000001280000-0x000001380000 : "boarddata2"
+[    4.533811] 0x000001380000-0x000001480000 : "pot"
+[    4.539084] 0x000001480000-0x000001980000 : "dnidata"
+[    4.546652] 0x000001980000-0x000007d80000 : "firmware"
+[    4.622305] 0x000001980000-0x000001fa0000 : "kernel"
+[    4.627524] 0x000001fa0000-0x000007d80000 : "rootfs"
+[    4.698273] mtd: device 26 (rootfs) set to be root filesystem
+[    4.698632] mtd: find squashfs magic at 0x1fa0000 of qcom_nand.0
+[    4.702989] mtd: find squashfs magic at 0x0 of rootfs
+[    4.709079] remap_blocks_in_rootfs_partition: remapped partition rootfs: 0x000001fa0000-0x000007d80000
+[    4.714019] create_block_mapping: create logic to physic blocks mapping for rootfs
+[    4.793079] 0x000007d80000-0x000008100000 : "language"
+[    4.796355] 0x000008100000-0x000008200000 : "cert"
+[    4.798488] 0x000008200000-0x000008280000 : "mtdoops"
+[    4.802882] 0x000008280000-0x000008480000 : "router_analytics"
+[    4.809135] 0x000008480000-0x00000e880000 : "ntgrdata"
+[    4.887695] 0x00000e880000-0x000020000000 : "reserved"
+[    4.950624] random: nonblocking pool is initialized
+[    5.096758] spmi spmi-0: PMIC Arb Version-2 (0x20010000)
+[    5.099682] libphy: Fixed MDIO Bus: probed
+[    5.101716] of_get_named_gpiod_flags: parsed 'phy-reset-gpio' property of node '/soc/mdio@90000[0]' - status (0)
+[    5.321781] of_get_named_gpiod_flags: can't parse 'phy-reset-gpio' property of node '/soc/mdio@90000[1]'
+[    5.321792] qca-mdio 90000.mdio: Could not find phy-reset-gpio
+[    5.321898] libphy: qca_mdio: probed
+[    5.328276] qca-mdio 90000.mdio: qca-mdio driver was registered
+[    5.330481] Unable to create IPC log context!
+[    5.336220] cnss: Platform driver probed successfully.
+[    5.340653] Skip QCA8074V1 in V2 platform
+[    5.345566] cnss_genl: genl_register_family fail: -17
+[    5.349509] cnss: CNSS genl init failed -17
+[    5.354602] cnss: Platform driver probed successfully.
+[    5.358730] i2c /dev entries driver
+[    5.374875] device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+[    5.375397] sdhci: Secure Digital Host Controller Interface driver
+[    5.382374] sdhci: Copyright(c) Pierre Ossman
+[    5.388409] sdhci-pltfm: SDHCI platform and OF driver helper
+[    5.393332] qcom_ice_get_pdevice: invalid device list
+[    5.398543] sdhci_msm 7824900.sdhci: sdhci_msm_ice_get_dev: ICE device not probed yet
+[    5.403476] sdhci_msm 7824900.sdhci: sdhci_msm_probe: required ICE device not probed yet err = -517
+[    5.411765] sdhci_msm 7864900.sdhci: sdhci_msm_probe: ICE device is not enabled
+[    5.420194] of_get_named_gpiod_flags: parsed 'cd-gpios' property of node '/soc/sdhci@7864900[0]' - status (0)
+[    5.420207] of_get_named_gpiod_flags: parsed 'sd-ldo-gpios' property of node '/soc/sdhci@7864900[0]' - status (0)
+[    5.420227] sdhci_msm 7864900.sdhci: Got SD LDO GPIO #21
+[    5.527487] sdhci_msm 7864900.sdhci: No vreg data found for vdd
+[    5.527515] sdhci_msm 7864900.sdhci: No vreg data found for vdd-io
+[    5.543121] pmd9655_ldo11: supplied by e-smps1-reg
+[    5.543230] sdhci_msm 7864900.sdhci: No vmmc regulator found
+[    5.584466] mmc0: SDHCI controller on 7864900.sdhci [7864900.sdhci] using ADMA 64-bit
+[    5.586519] qcom_ice_get_device_tree_data: No vdd-hba-supply regulator, assuming not needed
+[    5.591321] ICE IRQ = 81
+[    5.600014] 
+[    5.600014] Version Rollback Feature Disabled
+[    5.602898] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000008b04000
+[    5.607871] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000008b04000sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000008b04000
+[    5.625142] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000008b04000sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000008b04000
+[    5.641020] sps:BAM 0x0000000008b04000 is registered.<0>[    5.648822] DEV CI test message
+[    5.653488] subsys-restart: ssr_parse_restart_orders(): q6v5_m3 device has been added to q6v5-m3's restart group
+[    5.656229] subsys-restart: ssr_parse_restart_orders(): q6v5_wcss device has been added to q6v5-m3's restart group
+[    5.666701] remoteproc remoteproc0: q6v5-m3 is available
+[    5.677173] SPMI VADC - Min ch: 0 Max ch: 15
+[    5.684106] of_graph_get_next_endpoint(): no port node found in /soc/csr@6001000
+[    5.686591] coresight-csr 6001000.csr: CSR initialized
+[    5.694046] of_graph_get_next_endpoint(): no port node found in /soc/cti@6010000
+[    5.698993] of_graph_get_next_endpoint(): no port node found in /soc/cti@6011000
+[    5.706531] of_graph_get_next_endpoint(): no port node found in /soc/cti@6012000
+[    5.713896] of_graph_get_next_endpoint(): no port node found in /soc/cti@6013000
+[    5.721294] of_graph_get_next_endpoint(): no port node found in /soc/cti@6014000
+[    5.728675] of_graph_get_next_endpoint(): no port node found in /soc/cti@6015000
+[    5.736045] of_graph_get_next_endpoint(): no port node found in /soc/cti@6016000
+[    5.743407] of_graph_get_next_endpoint(): no port node found in /soc/cti@6017000
+[    5.750807] of_graph_get_next_endpoint(): no port node found in /soc/cti@6018000
+[    5.758186] of_graph_get_next_endpoint(): no port node found in /soc/cti@6019000
+[    5.765562] of_graph_get_next_endpoint(): no port node found in /soc/cti@601a000
+[    5.772921] of_graph_get_next_endpoint(): no port node found in /soc/cti@601b000
+[    5.780324] of_graph_get_next_endpoint(): no port node found in /soc/cti@601c000
+[    5.788784] of_graph_get_next_endpoint(): no port node found in /soc/cti@601d000
+[    5.795078] of_graph_get_next_endpoint(): no port node found in /soc/cti@601e000
+[    5.802446] of_graph_get_next_endpoint(): no port node found in /soc/cti@601f000
+[    5.809831] of_graph_get_next_endpoint(): no port node found in /soc/cti@6198000
+[    5.817397] of_graph_get_next_endpoint(): no port node found in /soc/cti@6199000
+[    5.824728] of_graph_get_next_endpoint(): no port node found in /soc/cti@619a000
+[    5.832126] of_graph_get_next_endpoint(): no port node found in /soc/cti@619b000
+[    5.839554] of_graph_get_next_endpoint(): no port node found in /soc/cti@610c000
+[    5.846962] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000006044000
+[    5.853947] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000006044000sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000006044000
+[    5.871055] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000006044000sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000006044000
+[    5.886968] sps:BAM 0x0000000006044000 is registered.<6>[    5.894567] coresight-tmc 6028000.tmc: TMC initialized
+[    5.899392] coresight-tmc 6027000.tmc: TMC initialized
+[    5.904541] coresight-funnel 6021000.funnel: FUNNEL initialized
+[    5.909557] coresight-funnel 6100000.funnel: FUNNEL initialized
+[    5.915399] coresight-funnel 6120000.funnel: FUNNEL initialized
+[    5.921276] coresight-funnel 61a1000.funnel: FUNNEL initialized
+[    5.927802] coresight-etm4x 619c000.etm: ETM 4.0 initialized
+[    5.933406] coresight-etm4x 619d000.etm: ETM 4.0 initialized
+[    5.939372] coresight-etm4x 619e000.etm: ETM 4.0 initialized
+[    5.945050] coresight-etm4x 619f000.etm: ETM 4.0 initialized
+[    5.950300] coresight-replicator-qcom 6026000.replicator: REPLICATOR 1.0 initialized
+[    5.956056] coresight-stm 6002000.stm: STM initialized
+[    5.964706] of_graph_get_next_endpoint(): no port node found in /soc/hwevent@6101000
+[    5.968452] coresight-hwevent 6101000.hwevent: Hardware Event driver initialized
+[    5.979583] qca_codec 0-0012: i2c regmap done
+[    5.984973] Netfilter messages via NETLINK v0.30.
+[    5.987946] nf_conntrack version 0.5.0 (6956 buckets, 27824 max)
+[    5.993515] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    5.999603] NET: Registered protocol family 10
+[    6.005310] NET: Registered protocol family 17
+[    6.008244] bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+[    6.012683] Bridge firewalling registered
+[    6.025412] 8021q: 802.1Q VLAN Support v1.8
+[    6.029323] Key type dns_resolver registered
+[    6.034826] <CORE> glink_core_register_transport: IPC Logging disabled
+[    6.037855] msm_glink_smem_native_xprt	rx fifo not found
+[    6.044200] qcom,cpr4-apss-regulator b018000.cpr4-ctrl: CPR valid fuse count: 4
+[    6.049779] pmd9655_s3: supplied by e-smps1-reg
+[    6.056822] cpr4_ipq807x_apss_read_fuse_data: apc_corner: speed bin = 0
+[    6.061147] cpr4_ipq807x_apss_read_fuse_data: apc_corner: CPR fusing revision = 1
+[    6.067763] cpr4_ipq807x_apss_read_fuse_data: apc_corner: CPR misc fuse value = 0
+[    6.075423] cpr4_ipq807x_apss_read_fuse_data: apc_corner: Voltage boost fuse config = 0 boost = disable
+[    6.082916] cpr3_mem_acc_init: apc: not using memory accelerator regulator
+[    6.092064] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused      SVS: open-loop= 712000 uV
+[    6.099012] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused      NOM: open-loop= 824000 uV
+[    6.108992] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused    TURBO: open-loop= 888000 uV
+[    6.118802] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused   STURBO: open-loop= 984000 uV
+[    6.128681] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused      SVS: quot[ 7]= 699, quot_offset[ 7]=   0
+[    6.138425] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused      NOM: quot[ 7]= 910, quot_offset[ 7]= 210
+[    6.149275] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused    TURBO: quot[ 7]=1017, quot_offset[ 7]= 105
+[    6.160211] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused   STURBO: quot[ 7]=1187, quot_offset[ 7]= 170
+[    6.171268] cpr3_regulator_init_ctrl: apc: Default CPR mode = closed-loop
+[    6.182582] qcom,cpr3-npu-regulator a4000.npu-cpr: NPU CPR valid fuse count: 2
+[    6.188955] pmd9655_s4: supplied by e-smps1-reg
+[    6.196093] cpr3_mem_acc_init: npu: not using memory accelerator regulator
+[    6.200385] npu_corner: fused      NOM: open-loop= 808000 uV
+[    6.207338] npu_corner: fused    TURBO: open-loop= 880000 uV
+[    6.213180] npu_corner: fused      NOM: open-loop= 808000 uV
+[    6.218793] npu_corner: fused    TURBO: open-loop= 880000 uV
+[    6.224464] npu_corner: Normal and Cold condition init done. Default to normal.
+[    6.231193] cpufreq: cpufreq_online: CPU0: Running at unlisted freq: 800000 KHz
+[    6.237280] cpufreq: cpufreq_online: CPU0: Unlisted initial frequency changed to: 1017600 KHz
+[    6.244978] qcom_ice_get_pdevice: found ice device ffffffc03cf53e00
+[    6.253069] qcom_ice_get_pdevice: matching platform device ffffffc0097d2800
+[    6.259164] of_get_named_gpiod_flags: can't parse 'cd-gpios' property of node '/soc/sdhci@7824900[0]'
+[    6.259168] of_get_named_gpiod_flags: can't parse 'sd-ldo-gpios' property of node '/soc/sdhci@7824900[0]'
+[    6.259181] sdhci_msm 7824900.sdhci: No vreg data found for vdd
+[    6.266107] sdhci_msm 7824900.sdhci: No vreg data found for vdd-io
+[    6.272155] qcom_ice 7803000.sdcc1ice: QC ICE 2.1.44 device found @0xffffff800110c000
+[    6.279317] sdhci_msm 7824900.sdhci: No vmmc regulator found
+[    6.286147] sdhci_msm 7824900.sdhci: No vqmmc regulator found
+[    6.334356] mmc1: SDHCI controller on 7824900.sdhci [7824900.sdhci] using ADMA 64-bit
+[    6.334531] DEV CI test message
+[    6.343437] remoteproc remoteproc1: q6v5-wcss is available
+[    6.346297] hctosys: unable to open rtc device (rtc0)
+[    6.375967] ALSA device list:
+[    6.375985]   No soundcards found.
+[    6.379661] VFS: Mounted root (squashfs filesystem) readonly on device 31:26.
+[    6.381315] Freeing unused kernel memory: 244K (ffffffc0009cd000 - ffffffc000a0a000)
+[    6.388469] Freeing alternatives memory: 44K (ffffffc000a0a000 - ffffffc000a15000)
+[    6.663836] init: Console is alive
+[    6.663935] init: - watchdog -
+[    7.169796] usbcore: registered new interface driver usbfs
+[    7.169836] usbcore: registered new interface driver hub
+[    7.174233] usbcore: registered new device driver usb
+[    7.180616] Button Hotplug driver version 0.4.1
+[    7.185235] of_get_named_gpiod_flags: parsed 'gpios' property of node '/soc/gpio_keys/button@1[0]' - status (0)
+[    7.187150] SCSI subsystem initialized
+[    7.190774] libata version 3.00 loaded.
+[    7.193254] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    7.193549] ehci-platform: EHCI generic platform driver
+[    7.206150] msm-usb-ssphy-qmp 78000.ssphy: Initializing QMP phy
+[    7.212934] msm-usb-ssphy-qmp 78000.ssphy: QMP PHY initialization timeout
+[    7.212954] msm-usb-ssphy-qmp 78000.ssphy: USB3_PHY_PCS_STATUS:68686868
+[    7.419815] msm-usb-ssphy-qmp 58000.ssphy: Initializing QMP phy
+[    7.426858] msm-usb-ssphy-qmp 58000.ssphy: QMP PHY initialization timeout
+[    7.426879] msm-usb-ssphy-qmp 58000.ssphy: USB3_PHY_PCS_STATUS:68686868
+[    7.635065] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    7.635098] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    7.639575] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x00010010
+[    7.647037] xhci-hcd xhci-hcd.0.auto: irq 214, io mem 0x08a00000
+[    7.655965] hub 1-0:1.0: USB hub found
+[    7.661923] hub 1-0:1.0: 1 port detected
+[    7.665624] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    7.669557] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    7.674903] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    7.682603] hub 2-0:1.0: USB hub found
+[    7.690749] hub 2-0:1.0: 1 port detected
+[    7.694444] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    7.698380] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 3
+[    7.703796] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x00010010
+[    7.711256] xhci-hcd xhci-hcd.1.auto: irq 215, io mem 0x08c00000
+[    7.720107] hub 3-0:1.0: USB hub found
+[    7.726168] hub 3-0:1.0: 1 port detected
+[    7.729809] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    7.733794] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 4
+[    7.739117] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[    7.746837] hub 4-0:1.0: USB hub found
+[    7.754980] hub 4-0:1.0: 1 port detected
+[    7.761169] usbcore: registered new interface driver usb-storage
+[    8.666641] init: - preinit -
+[   10.775560] ubi0: attaching mtd31
+[   11.165418] ubi0: scanning is finished
+[   11.171247] ubi0: attached mtd31 (name "ntgrdata", size 100 MiB)
+[   11.171269] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[   11.176317] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[   11.182992] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[   11.189855] ubi0: good PEBs: 800, bad PEBs: 0, corrupted PEBs: 0
+[   11.196624] ubi0: user volume: 7, internal volumes: 1, max. volumes count: 128
+[   11.202871] ubi0: max/mean erase counter: 7/4, WL threshold: 4096, image sequence number: 640178389
+[   11.209913] ubi0: available PEBs: 72, total reserved PEBs: 728, PEBs reserved for bad PEB handling: 80
+[   11.218861] ubi0: background thread "ubi_bgt0d" started, PID 207
+[   11.237112] ubi1: attaching mtd23
+[   11.259187] ubi1: scanning is finished
+[   11.263696] ubi1 warning: print_rsvd_warning: cannot reserve enough PEBs for bad PEB handling, reserved 24, need 80
+[   11.264075] ubi1: attached mtd23 (name "dnidata", size 5 MiB)
+[   11.272959] ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[   11.278831] ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[   11.285599] ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+[   11.292453] ubi1: good PEBs: 40, bad PEBs: 0, corrupted PEBs: 0
+[   11.299227] ubi1: user volume: 4, internal volumes: 1, max. volumes count: 128
+[   11.305135] ubi1: max/mean erase counter: 1/0, WL threshold: 4096, image sequence number: 1521330462
+[   11.312423] ubi1: available PEBs: 0, total reserved PEBs: 40, PEBs reserved for bad PEB handling: 24
+[   11.321723] ubi1: background thread "ubi_bgt1d" started, PID 221
+[   11.585419] procd: - early -
+[   11.587974] procd: - watchdog -
+[   12.213536] procd: - ubus -
+[   13.216168] procd: - init -
+[   14.034397]                   
+[   14.070839] jnl: driver (UFSD_HEAD UFSD_HEAD_r331462_b361) loaded at ffffffbffc14c000
+[   14.122911] ufsd: module license 'Commercial product' taints kernel.
+[   14.122939] Disabling lock debugging due to kernel taint
+[   14.130151] ufsd: driver (UFSD_HEAD UFSD_HEAD_r331462_b361, acl, ioctl, sd2(5), tr, car) loaded at ffffffbffc15a000
+[   14.130151] NTFSJ support included
+[   14.130151] Build_for__Netgear_AX6000_k4.4.60_2017-11-21_UFSD_HEAD_r331462_b361
+[   14.133650] ufsd: PAGE_SIZE=4K, THREAD_SIZE=16k
+[   14.156015] ufsd: Kernel .config hash: original 0x364547e7, current 0x9c6293f3, not matched.
+[   14.158974] ufsd: Kernel .config hash: original 0x364547e7, current 0x9c6293f3, not matched
+[   14.284408] Factory Reset Mode                  
+[   15.208898] NET: Registered protocol family 38
+[   15.211211] pct2075 init!
+[   15.212390] get i2c adapter 0 ok
+[   15.215217] get i2c client pct2075 @ 0x48 ok
+[   15.218421] pct2075 probe
+[   15.222671] pct2075 init success!
+[   15.228896] cfg80211: World regulatory domain updated:
+[   15.228920] cfg80211:  DFS Master region: unset
+[   15.233486] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+[   15.238168] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+[   15.238787] device-mapper: req-crypt: dm-req-crypt successfully initalized.
+[   15.238787] 
+[   15.241404] Initializing XFRM netlink socket
+[   15.241826] NET: Registered protocol family 15
+[   15.259763] ssdk_switch_device_num_init[998]:INFO:ess-switch dts node number: 1
+[   15.259795] ssdk_dt_get_switch_node[836]:INFO:ess-switch DT exist!
+[   15.259803] ssdk_dt_parse_access_mode[737]:INFO:switch_access_mode: local bus
+[   15.259805] ssdk_dt_parse_access_mode[750]:INFO:switchreg_base_addr: 0x3a000000
+[   15.259807] ssdk_dt_parse_access_mode[751]:INFO:switchreg_size: 0x1000000
+[   15.259809] ssdk_dt_parse_mac_mode[242]:INFO:mac mode = 0x0
+[   15.259811] ssdk_dt_parse_mac_mode[251]:INFO:mac mode1 = 0xff
+[   15.259813] ssdk_dt_parse_mac_mode[260]:INFO:mac mode2 = 0xd
+[   15.259816] ssdk_dt_parse_phy_info[515]:INFO:qcom,port_phyinfo DT doesn't exist!
+[   15.259821] ssdk_dt_parse_mdio[605]:INFO:mdio DT exist!
+[   15.259839] ssdk_dt_parse_uniphy[279]:INFO:ess-uniphy DT exist!
+[   15.259919] ssdk_dt_parse_intf_mac[683]:INFO:dp1 MAC 80:cc:9c:88:c0:30
+[   15.259938] ssdk_dt_parse_intf_mac[683]:INFO:dp2 MAC 80:cc:9c:88:c0:31
+[   15.259956] ssdk_dt_parse_intf_mac[683]:INFO:dp3 MAC 80:cc:9c:88:c0:32
+[   15.260019] ssdk_plat_init start
+[   15.336031] Factory Reset Mode
+[   15.336032] ssdk_ppe_clock_init[464]:INFO:ppe and uniphy clock init successfully!
+[   15.336271] ssdk_probe[1878]:INFO:ess_rst doesn't exist!
+[   15.377594] cfg80211:   (2457000 KHz - 2482000 KHz @ 20000 KHz, 92000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+[   15.382975] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm), (N/A)
+[   15.392092] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+[   15.400081] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (0 s)
+[   15.409802] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (N/A, 2000 mBm), (0 s)
+[   15.419261] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+[   15.427338] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+[   15.435381] HPPE initializing...
+[   15.443596] malibu_phy_api_ops_init[2853]:INFO:qca probe malibu phy driver succeeded!
+[   15.454032] aquantia_phy_api_ops_init[2180]:INFO:qca probe aquantia phy driver succeeded!
+[   15.459057] regi_init[3405]:INFO:Initializing HPPE!!
+[   15.684351] ssdk_ppe_reset_init[738]:INFO:ppe reset successfully!
+[   15.690291] qca_hppe_tdm_hw_init[737]:INFO:tdm setup num=96
+[   15.693674] qca_hppe_portctrl_hw_init[165]:INFO:Hawkeye PPE port initializing
+[   16.034384]                   Factory Reset Mode                  Factory Reset Mode
+[   17.504383] ssdk_switch_register[1617]:INFO:Chip version 0x1500
+[   17.507533] qca_link_polling_select[1279]:INFO:link-polling-required node does not exist
+[   17.513773] ssdk_switch_register[1642]:INFO:polling is selected
+[   17.521497] regi_init[3409]:INFO:Initializing HPPE Done!!
+[   17.526421] regi_init[3453]:INFO:qca-ssdk module init succeeded!
+[   17.537139] tun: Universal TUN/TAP device driver, 1.6
+[   17.537161] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[   17.543314] EDMA ver 1 hw init
+[   17.547470] EDMA HW Reset completed succesfully
+[   17.550304] Num rings - TxDesc:1 (23-23) TxCmpl:1 (7-7)
+[   17.554707] RxDesc:1 (15-15) RxFill:1 (7-7)
+[   17.562381] GMAC4(ffffffc03b79f880) Invalid MAC@ - using b2:1b:d3:26:96:e0
+[   17.564845] GMAC5(ffffffc03b5ab880) Invalid MAC@ - using d6:72:2e:71:7e:4b
+[   17.571790] GMAC6(ffffffc03b5af880) Invalid MAC@ - using b2:e4:a4:91:cc:c8
+[   17.578846] **********************************************************
+[   17.584822] * NSS Data Plane driver
+[   17.591242] **********************************************************
+[   17.595336] Loading DNI-ENET driver
+[   17.609903] l2tp_core: L2TP core driver, V2.0
+[   17.610538] l2tp_netlink: L2TP netlink interface
+[   17.669683] qca-nss 39000000.nss: Direct firmware load for qca-nss0.bin failed with error -2
+[   17.669714] qca-nss 39000000.nss: Falling back to user helper
+[   17.728119] firmware qca-nss0.bin: firmware_loading_store: map pages failed
+[   17.728981] ffffffbffc852280: request_firmware failed with err code: -11
+[   17.735752] ffffffbffc852280: firmware load from driver failed
+[   17.742630] qca-nss: probe of 39000000.nss failed with error -11
+[   17.762627] qca-nss 39400000.nss: Direct firmware load for qca-nss1.bin failed with error -2
+[   17.762650] qca-nss 39400000.nss: Falling back to user helper
+[   17.784801] firmware qca-nss1.bin: firmware_loading_store: map pages failed
+[   17.785624] ffffffbffc859380: request_firmware failed with err code: -11
+[   17.792218] ffffffbffc859380: firmware load from driver failed
+[   17.799092] qca-nss: probe of 39400000.nss failed with error -11
+[   17.816249] sit: IPv6 over IPv4 tunneling driver
+[   17.817841] nat46: module (version 8ff2ae59ec9840a7b8b45f976c51cae80abe0226) loaded.
+[   17.822362] dni-qos module init.
+[   17.828628] gre: GRE over IPv4 demultiplexor driver
+[   17.831906] ip_gre: GRE over IPv4 tunneling driver
+[   17.837140] ip6_gre: GRE over IPv6 tunneling driver
+[   17.842687] Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[   17.849953] QCA multicast snooping installed successfully
+[   17.852787] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[   17.870296] XHTTP netlink: create netlink OK.
+[   17.871952] ip_set: protocol 6
+[   17.884721] <NSS-CRYPTO>:module loaded Build_ID - 05/14/22, 08:51:27 SoC=ipq807x_64
+[   17.886651] cannot find nss-macsec0 node
+[   17.891197] cannot find nss-macsec1 node
+[   17.895415] cannot find nss-macsec2 node
+[   17.899242] nss_macsec init success
+[   17.906730] diag: IPC Logging disabled
+[   17.914442] PPP generic driver version 2.4.2
+[   17.915710] NET: Registered protocol family 24
+[   17.920346] PPTP driver version 0.8.5
+[   17.929102] u32 classifier
+[   17.929119]     input device check on
+[   17.930687]     Actions configured
+[   17.935974] Mirror/redirect action on
+[   17.953910] arp_tables: (C) 2002 David S. Miller
+[   17.962868] Ebtables v2.0 registered
+[   17.964662] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[   17.969839] nf_conntrack_rtsp v0.6.21 loading
+[   17.974131] nf_nat_rtsp v0.6.21 loading
+[   17.976407] PPP MPPE Compression module registered
+[   17.983604] xt_time: kernel timezone is -0000
+[   18.034414]                   
+[   18.284415] Factory Reset Mode                  
+[   19.284406] Factory Reset Mode                  Factory Reset Mode                  
+[   21.284416] Factory Reset Mode                  Factory Reset Mode
+[   22.424749] UBIFS (ubi0:6): default file-system created
+[   22.428125] UBIFS (ubi0:6): background thread "ubifs_bgt0_6" started, PID 1971
+[   22.470581] UBIFS (ubi0:6): UBIFS: mounted UBI device 0, volume 6, name "vol_dal"
+[   22.473215] UBIFS (ubi0:6): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[   22.480866] UBIFS (ubi0:6): FS size: 4063232 bytes (3 MiB, 32 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[   22.490776] UBIFS (ubi0:6): reserved for root: 191915 bytes (187 KiB)
+[   22.500650] UBIFS (ubi0:6): media format: w4/r0 (latest is w4/r0), UUID 491BC389-DF61-479D-B2B5-60645A695B53, small LPT model
+[   22.655578] ECM init
+[   22.655629] ECM database jhash random seed: 0xa04648e7
+[   22.657743] ECM init complete
+[   22.887129] bond0: Removing slave eth4
+[   22.887152] bond0: option slaves: invalid value (-eth4)
+[   22.889801] bond0: Removing slave eth0
+[   22.895011] bond0: option slaves: invalid value (-eth0)
+[   22.914047] device eth0 entered promiscuous mode
+[   22.915247] device eth1 entered promiscuous mode
+[   22.918735] device eth5 entered promiscuous mode
+[   22.925001] device eth2 entered promiscuous mode
+[   22.927977] device eth3 entered promiscuous mode
+[   22.934155] eth4: nss_dp_edma: Registering netdev eth4(qcom-id:5) with EDMA
+[   22.936156] netif_napi_add() called with weight 100 on device eth4
+[   22.943309] IPv6: ADDRCONF(NETDEV_UP): eth4: link is not ready
+[   22.950295] device eth4 entered promiscuous mode
+[   23.023163] eth0: nss_dp_edma: Registering netdev eth0(qcom-id:1) with EDMA
+[   23.023541] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   23.030356] eth1: nss_dp_edma: Registering netdev eth1(qcom-id:2) with EDMA
+[   23.035285]                   
+[   23.035285] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   23.047986] eth2: nss_dp_edma: Registering netdev eth2(qcom-id:3) with EDMA
+[   23.052531] IPv6: ADDRCONF(NETDEV_UP): eth2: link is not ready
+[   23.060451] eth3: nss_dp_edma: Registering netdev eth3(qcom-id:4) with EDMA
+[   23.065328] IPv6: ADDRCONF(NETDEV_UP): eth3: link is not ready
+[   23.073177] eth5: nss_dp_edma: Registering netdev eth5(qcom-id:6) with EDMA
+[   23.078137] IPv6: ADDRCONF(NETDEV_UP): eth5: link is not ready
+[   23.086156] br0: port 5(eth3) entered forwarding state
+[   23.090482] br0: port 5(eth3) entered forwarding state
+[   23.095607] br0: port 4(eth2) entered forwarding state
+[   23.100713] br0: port 4(eth2) entered forwarding state
+[   23.105841] br0: port 3(eth5) entered forwarding state
+[   23.110955] br0: port 3(eth5) entered forwarding state
+[   23.116083] br0: port 2(eth1) entered forwarding state
+[   23.121199] br0: port 2(eth1) entered forwarding state
+[   23.126327] br0: port 1(eth0) entered forwarding state
+[   23.131442] br0: port 1(eth0) entered forwarding state
+[   23.149872] br0: port 5(eth3) entered disabled state
+[   23.149928] br0: port 4(eth2) entered disabled state
+[   23.153898] br0: port 3(eth5) entered disabled state
+[   23.158858] br0: port 2(eth1) entered disabled state
+[   23.163795] br0: port 1(eth0) entered disabled state
+[   23.284387] Factory Reset Mode                  Factory Reset Mode
+[   24.879104] IPv6: ADDRCONF(NETDEV_UP): brwan: link is not ready
+[   25.034389]                   
+[   25.173270] IPv6: ADDRCONF(NETDEV_UP): br0: link is not ready
+[   25.211794] clear list
+[   25.284412] Factory Reset Mode                  Factory Reset Mode                  Factory Reset Mode                  
+[   29.324525] configuring additional NSS pbufs
+[   29.325232] additional pbufs of size 0 got added to NSS
+[   29.329529] sysctl wrote to extra_pbuf_core0 when file position was not 0!
+[   29.329529] This will not be supported in the future. To silence this
+[   29.329529] warning, set kernel.sysctl_writes_strict = -1
+[   29.334508] Invalid input value. should be greater than 1 and less than 20971520
+[   33.629164] configuring additional NSS pbufs
+[   33.632016] additional pbufs of size 0 got added to NSS
+[   33.636525] Invalid input value. should be greater than 1 and less than 20971520
+[   33.882973] brwan: port 1(eth4) entered disabled state
+[   33.892202] IPv6: ADDRCONF(NETDEV_UP): eth4: link is not ready
+[   36.907658] wlan (6614): drop_caches: 3
+[   39.084498] configuring additional NSS pbufs
+[   39.084571] additional pbufs of size 0 got added to NSS
+[   39.087944] Invalid input value. should be greater than 1 and less than 20971520
+[   39.481953] wlan (7072): drop_caches: 3
+[   39.871913] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[   41.399814] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[   41.619303] configuring additional NSS pbufs
+[   41.619380] additional pbufs of size 0 got added to NSS
+[   41.622637] Invalid input value. should be greater than 1 and less than 20971520
+[   44.031263] xt_CT: netfilter: NOTRACK target is deprecated, use CT instead or upgrade iptables
+[   50.514708] UBIFS (ubi0:5): default file-system created
+[   50.515221] UBIFS (ubi0:5): background thread "ubifs_bgt0_5" started, PID 10056
+[   50.561312] UBIFS (ubi0:5): UBIFS: mounted UBI device 0, volume 5, name "vol_armor"
+[   50.561336] UBIFS (ubi0:5): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[   50.567787] UBIFS (ubi0:5): FS size: 59551744 bytes (56 MiB, 469 LEBs), journal size 2920448 bytes (2 MiB, 23 LEBs)
+[   50.577848] UBIFS (ubi0:5): reserved for root: 2812775 bytes (2746 KiB)
+[   50.588086] UBIFS (ubi0:5): media format: w4/r0 (latest is w4/r0), UUID 5D6B07F5-4B60-43A1-84D7-2C8F3CD4A460, small LPT model
+[   50.994855] guster accel_cb registered; mark shift 20
+[  165.631731] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[  167.459961] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[  190.554504] eth3: PHY Link up speed: 1000
+[  190.554787] IPv6: ADDRCONF(NETDEV_CHANGE): eth3: link becomes ready
+[  190.557606] br0: port 5(eth3) entered forwarding state
+[  190.563592] br0: port 5(eth3) entered forwarding state
+[  190.568976] IPv6: ADDRCONF(NETDEV_CHANGE): br0: link becomes ready
+[  192.980633] XHTTP netlink: remove OK.
+[  193.062573] XHTTP netlink: create netlink OK.
+[  198.554454] eth3: PHY Link is down
+[  198.554910] br0: port 5(eth3) entered disabled state
+[  199.554816] eth3: PHY Link up speed: 1000
+[  199.554867] br0: port 5(eth3) entered forwarding state
+[  199.557819] br0: port 5(eth3) entered forwarding state
+[  290.960850] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[  292.770005] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[  415.455934] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[  417.013910] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[  540.311790] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[  541.951270] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[  664.521026] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[  666.417122] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[  789.286962] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[  790.931517] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[  896.554458] eth3: PHY Link is down
+[  896.554917] br0: port 5(eth3) entered disabled state
+[  913.855832] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[  915.738489] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[  950.554510] eth3: PHY Link up speed: 1000
+[  950.554811] br0: port 5(eth3) entered forwarding state
+[  950.557541] br0: port 5(eth3) entered forwarding state
+[ 1039.981393] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 1041.782404] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 1164.797623] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 1166.705337] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 1290.477910] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 1292.282993] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 1415.528223] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 1417.444244] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 1540.300657] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 1541.949415] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 1664.646803] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 1666.490069] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 1767.454386] usb 1-1: new high-speed USB device number 2 using xhci-hcd
+[ 1767.595390] usb-storage 1-1:1.0: USB Mass Storage device detected
+[ 1767.605722] scsi host0: usb-storage 1-1:1.0
+[ 1768.604928] scsi 0:0:0:0: Direct-Access     SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0 CCS
+[ 1768.605241] scsi 0:0:0:1: CD-ROM            SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0
+[ 1768.613844] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[ 1769.812788] sd 0:0:0:0: [sda] 14477311 512-byte logical blocks: (7.41 GB/6.90 GiB)
+[ 1769.814994]  sda: sda1
+[ 1770.303551] hfsplus: unable to parse mount options
+[ 1770.304019] hfs: unable to parse mount options
+[ 1770.309521] XFS (sda1): unknown mount option [usefree].
+[ 1770.312116] ufsd: failed to mount "sda1". bad option "usefree,utf8=yes,fmask=0000,dmask=0000"
+[ 1770.316806] ufsd: failed to mount "sda1". bad option "usefree,utf8=yes,fmask=0000,dmask=0000"
+[ 1770.325479] ufsd: fill_super failed to mount sda1: "bad options" ->-22
+[ 1770.337023] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 1782.953148] usb 1-1: USB disconnect, device number 2
+[ 1786.564372] usb 3-1: new high-speed USB device number 2 using xhci-hcd
+[ 1786.705350] usb-storage 3-1:1.0: USB Mass Storage device detected
+[ 1786.715567] scsi host1: usb-storage 3-1:1.0
+[ 1787.714902] scsi 1:0:0:0: Direct-Access     SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0 CCS
+[ 1787.715231] scsi 1:0:0:1: CD-ROM            SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0
+[ 1787.723796] sd 1:0:0:0: [sda] Attached SCSI removable disk
+[ 1789.473810] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 1791.323946] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 1864.934551] usb 3-1: USB disconnect, device number 2
+[ 1869.995601] nf_conntrack: automatic helper assignment is deprecated and it will be removed soon. Use the iptables CT target to attach helpers instead.
+[ 1915.475970] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 1917.271520] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 2040.320593] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 2042.019224] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 2064.034530] usb 3-1: new high-speed USB device number 3 using xhci-hcd
+[ 2064.175333] usb-storage 3-1:1.0: USB Mass Storage device detected
+[ 2064.191366] scsi host2: usb-storage 3-1:1.0
+[ 2065.194922] scsi 2:0:0:0: Direct-Access     SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0 CCS
+[ 2065.205251] scsi 2:0:0:1: CD-ROM            SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0
+[ 2065.216970] sd 2:0:0:0: [sda] Attached SCSI removable disk
+[ 2066.290606] sd 2:0:0:0: [sda] 14477311 512-byte logical blocks: (7.41 GB/6.90 GiB)
+[ 2066.292905]  sda: sda1
+[ 2066.701457] hfsplus: unable to parse mount options
+[ 2066.701927] hfs: unable to parse mount options
+[ 2066.707125] XFS (sda1): unknown mount option [usefree].
+[ 2066.710039] ufsd: failed to mount "sda1". bad option "usefree,utf8=yes,fmask=0000,dmask=0000"
+[ 2066.714720] ufsd: failed to mount "sda1". bad option "usefree,utf8=yes,fmask=0000,dmask=0000"
+[ 2066.723376] ufsd: fill_super failed to mount sda1: "bad options" ->-22
+[ 2066.734684] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 2091.737949] usb 3-1: USB disconnect, device number 3
+[ 2165.321444] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 2167.014260] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 2206.994391] usb 1-1: new high-speed USB device number 3 using xhci-hcd
+[ 2207.135504] usb-storage 1-1:1.0: USB Mass Storage device detected
+[ 2207.145791] scsi host3: usb-storage 1-1:1.0
+[ 2208.154905] scsi 3:0:0:0: Direct-Access     SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0 CCS
+[ 2208.165242] scsi 3:0:0:1: CD-ROM            SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0
+[ 2208.166729] sd 3:0:0:0: [sda] Attached SCSI removable disk
+[ 2209.246570] sd 3:0:0:0: [sda] 14477311 512-byte logical blocks: (7.41 GB/6.90 GiB)
+[ 2209.248787]  sda: sda1
+[ 2209.656369] hfsplus: unable to parse mount options
+[ 2209.656854] hfs: unable to parse mount options
+[ 2209.662005] XFS (sda1): unknown mount option [usefree].
+[ 2209.665336] ufsd: failed to mount "sda1". bad option "usefree,utf8=yes,fmask=0000,dmask=0000"
+[ 2209.669612] ufsd: failed to mount "sda1". bad option "usefree,utf8=yes,fmask=0000,dmask=0000"
+[ 2209.678359] ufsd: fill_super failed to mount sda1: "bad options" ->-22
+[ 2209.689793] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 2290.039961] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 2291.877604] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 2336.045577] usb 1-1: USB disconnect, device number 3
+[ 2414.836267] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 2416.729964] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[ 2492.114405] usb 1-1: new high-speed USB device number 4 using xhci-hcd
+[ 2492.255297] usb-storage 1-1:1.0: USB Mass Storage device detected
+[ 2492.255761] scsi host4: usb-storage 1-1:1.0
+[ 2493.265011] scsi 4:0:0:0: Direct-Access     SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0 CCS
+[ 2493.265400] scsi 4:0:0:1: CD-ROM            SanDisk  Cruzer Colors+   8.02 PQ: 0 ANSI: 0
+[ 2493.274084] sd 4:0:0:0: [sda] Attached SCSI removable disk
+[ 2494.351317] sd 4:0:0:0: [sda] 14477311 512-byte logical blocks: (7.41 GB/6.90 GiB)
+[ 2494.353575]  sda: sda1
+[ 2494.760814] hfsplus: unable to parse mount options
+[ 2494.761308] hfs: unable to parse mount options
+[ 2494.766513] XFS (sda1): unknown mount option [usefree].
+[ 2494.769380] ufsd: failed to mount "sda1". bad option "usefree,utf8=yes,fmask=0000,dmask=0000"
+[ 2494.774052] ufsd: failed to mount "sda1". bad option "usefree,utf8=yes,fmask=0000,dmask=0000"
+[ 2494.782963] ufsd: fill_super failed to mount sda1: "bad options" ->-22
+[ 2494.794332] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 2541.867100] EXT4-fs (mtdblock37): mounted filesystem without journal. Opts: (null)
+[ 2543.758325] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
